@@ -1,74 +1,113 @@
-secureAuth
+# secureAuth
 
-A Django and React project providing secure authentication using JWT and HTTP-only cookies. This project overrides the default JWT authentication with a custom 
-authenticate.py file to enhance security by utilizing HTTP-only cookies.
-Table of Contents
+A Django and React project providing **secure authentication** using JWT and HTTP-only cookies.  
+This project overrides the default JWT authentication with a custom `authenticate.py` file to enhance security.
 
-About
-Features
-Installation
-Usage
-Contributing
-License
+---
 
-About
-secureAuth is a web application built with Django (backend) and React + Vite (frontend). It implements a secure authentication system based on JSON Web Tokens (JWT)
-with HTTP-only cookies to ensure enhanced security for user sessions.
-Repository: https://github.com/Tijo-11/secureAuth
-Features
+##  Table of Contents
 
-Custom JWT authentication using HTTP-only cookies
-Django backend with RESTful API
-React + Vite frontend for a fast and modern user interface
-Secure session management
+- About
+- Features
+- Installation
+  - Backend Setup
+  - Frontend Setup
+- Usage
+- Contributing
 
-Installation
-Prerequisites
+---
 
-Python 3.8+ (for backend)
-Node.js 16+ (for frontend)
-Git
+##  About
 
-Backend Setup
+**secureAuth** is a web application built with:
+- Django (backend)
+- React + Vite (frontend)
 
-Clone the repository:git clone https://github.com/Tijo-11/secureAuth.git
+It implements a secure authentication system using **JSON Web Tokens (JWT)** stored in **HTTP-only cookies**, ensuring enhanced session security.
 
+ Repository: https://github.com/Tijo-11/secureAuth
 
-Navigate to the backend directory:cd secureAuth/backend
+---
 
+##  Features
 
-Create and activate a virtual environment:python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+- Custom JWT authentication via HTTP-only cookies  
+- Django backend with RESTful API  
+- React + Vite frontend for a fast UI  
+- Secure session management
 
+---
 
-Install the required dependencies:pip install -r requirements.txt
+## ⚙ Installation
 
+###  Prerequisites
 
-Run the Django server:python manage.py runserver
+- Python 3.8+ (backend)  
+- Node.js 16+ (frontend)  
+- Git
 
+---
 
+###  Backend Setup
 
-Frontend Setup
+1. Clone the repository:  
+   git clone https://github.com/Tijo-11/secureAuth.git
 
-Navigate to the frontend directory:cd secureAuth/frontend
+2. Navigate to the backend directory:  
+   cd secureAuth/backend
 
+3. Create and activate a virtual environment:  
+   python -m venv venv  
+   source venv/bin/activate      (On Windows: venv\Scripts\activate)
 
-Install the dependencies:npm install
+4. Install dependencies:  
+   pip install -r requirements.txt
 
+5. Run the server:  
+   python manage.py runserver
 
-Start the development server:npm run dev
+---
 
-Usage
+###  Frontend Setup
 
-Access the backend API at http://localhost:8000 (default Django port).
-Access the frontend at the URL provided by Vite (typically http://localhost:5173).
-The application provides secure login and registration endpoints with JWT-based authentication stored in HTTP-only cookies.
+1. Navigate to the frontend directory:  
+   cd secureAuth/frontend
 
-Contributing
-Contributions are welcome! Please follow these steps:
+2. Install dependencies:  
+   npm install
 
-Fork the repository.
-Create a new branch (git checkout -b feature/your-feature).
-Commit your changes (git commit -m 'Add your feature').
-Push to the branch (git push origin feature/your-feature).
-Open a pull request.
+3. Start the development server:  
+   npm run dev
+
+---
+
+##  Usage
+
+- Backend API: http://localhost:8000  
+- Frontend (via Vite): http://localhost:5173
+
+This application supports secure **login** and **registration** using JWT stored in **HTTP-only cookies**.
+
+---
+
+##  Contributing
+
+We welcome contributions!
+
+1. Fork the repository  
+2. Create a new branch  
+   git checkout -b feature/your-feature
+
+3. Make your changes and commit  
+   git commit -m 'Add your feature'
+
+4. Push to GitHub  
+   git push origin feature/your-feature
+
+5. Open a Pull Request
+
+---
+
+##  License
+
+This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
