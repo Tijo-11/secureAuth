@@ -1,4 +1,5 @@
 secureAuth
+
 A Django and React project providing secure authentication using JWT and HTTP-only cookies. This project overrides the default JWT authentication with a custom 
 authenticate.py file to enhance security by utilizing HTTP-only cookies.
 Table of Contents
